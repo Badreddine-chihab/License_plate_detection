@@ -1,0 +1,7 @@
+path : D:\WORK\Personel\Matricule_Yolov8\data
+train : images\train
+val : images\train
+
+
+names : 
+  0: "plate"
