@@ -1,7 +1,22 @@
-path : D:\WORK\Personel\Matricule_Yolov8\data
-train : images\train
-val : images\train
+path : '/content/drive/MyDrive/Matricule_Yolov8/data/dataset '
+train: images/train
+val: images/val
 
+names:
+  0: "0"
+  1: "1"
+  2: "2"
+  3: "3"
+  4: "4"
+  5: "5"
+  6: "6"
+  7: "7"
+  8: "8"
+  9: "9"
+  10: "a"
+  11: "b"
+  12: "d"
+  13: "h"
+  14: "w"
+  15: "waw"
 
-names : 
-  0: "plate"

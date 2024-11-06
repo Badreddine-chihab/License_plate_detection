@@ -9,7 +9,7 @@ model_car = YOLO('yolov8n.pt')  # YOLOv8 model for cars
 model_plate = YOLO('license_plate_model.pt')  # Custom YOLO model for license plates
 
 # Input and output directories
-input_dir = './images'
+input_dir = './Inputs'
 output_dir = './crop_img'
 os.makedirs(output_dir, exist_ok=True)
 
@@ -41,12 +41,14 @@ for image_file in image_files:
 
             # Crop license plate
             license_plate_crop = frame[int(y1):int(y2), int(x1):int(x2)]
-            license_plate_crop_gray = cv2.cvtColor(license_plate_crop, cv2.COLOR_BGR2GRAY)
-            license_plate_crop_blur = cv2.GaussianBlur(license_plate_crop_gray, (5,5),0)
-            _, license_plate_crop_thresh = cv2.threshold(license_plate_crop_blur, 0, 255, cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 
-            # Save the cropped license plate image
+
+            # Resize the aligned image to 3x its original size
+            license_plate_resized = cv2.resize(license_plate_crop, None, fx=3, fy=3, interpolation=cv2.INTER_CUBIC)
+
+
+            # Save the preprocessed license plate image
             cropped_path = os.path.join(output_dir, f'{os.path.splitext(image_file)[0]}_plate_{i}.png')
-            cv2.imwrite(cropped_path, license_plate_crop_thresh)
+            cv2.imwrite(cropped_path, license_plate_resized)
 
-print('Cropping completed and images saved in crop_img.')
+print('Cropping, aligning, resizing, and preprocessing completed; images saved in crop_img.')
