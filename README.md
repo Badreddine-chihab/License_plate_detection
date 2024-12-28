@@ -1,6 +1,6 @@
 # License_plate_detection
 this is a moroccan license plate detection and reader
-Detection : custom dataset  using labelImg , date preparation and augmentation 
+Detection : custom dataset  using labelImg , data preparation and augmentation 
 Reader :dataset : https://cc.um6p.ma/cc_datasets
         output : 26178WAW --> 2617و8
          image classification for 16 classes using Yolov8
