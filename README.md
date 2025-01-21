@@ -1,4 +1,5 @@
-Moroccan License Plate Detection and Reader
+#Moroccan License Plate Detection and Reader
+
 This project is a comprehensive solution for detecting and reading Moroccan license plates. It uses custom datasets and machine learning models to detect license plates, segment characters, and translate them into Arabic characters.
 
 Features and Components
