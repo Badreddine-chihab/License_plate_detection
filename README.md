@@ -37,7 +37,8 @@ Console Output:
 The detected characters are printed in the console, with the Latin-to-Arabic character mapping applied for readability.
 Results Directory:
 All output images with detected characters are saved in the results directory for reference.
-Application
+
+4. Application
 App.py:
 A GUI-based application that integrates the entire workflow for ease of use. The application provides:
 Video and image upload functionalities.
