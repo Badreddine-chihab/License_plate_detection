@@ -13,10 +13,8 @@ Data Sources
 Character Recognition Dataset: The dataset for character recognition is sourced from the UM6P dataset.
 Output Example: For a detected license plate like 26178WAW, the output is transformed into 2617و8 using a mapping process to convert Latin characters into their corresponding Arabic characters.
 Workflow
-
 1. Frame Extraction and Cropping
 The project includes two scripts that handle video and image processing:
-
 cropping_vid.py:
 Processes a video file by extracting frames.
 Detects unique license plates within the frames.
@@ -34,13 +32,10 @@ Arabic Character Mapping:
 The detected Latin-style characters are mapped back to their corresponding Arabic forms using a character mapping dictionary.
 3. Visualization and Results
 Visualization with Matplotlib:
-
 The results are plotted in a grid layout using matplotlib.pyplot. Each plot displays the processed license plate with the detected characters.
 Console Output:
-
 The detected characters are printed in the console, with the Latin-to-Arabic character mapping applied for readability.
 Results Directory:
-
 All output images with detected characters are saved in the results directory for reference.
 Application
 App.py:
