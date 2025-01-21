@@ -1,4 +1,6 @@
-#Moroccan License Plate Detection and Reader
+Moroccan License Plate Detection and Reader
+
+
 
 This project is a comprehensive solution for detecting and reading Moroccan license plates. It uses custom datasets and machine learning models to detect license plates, segment characters, and translate them into Arabic characters.
 
@@ -11,6 +13,7 @@ Data Sources
 Character Recognition Dataset: The dataset for character recognition is sourced from the UM6P dataset.
 Output Example: For a detected license plate like 26178WAW, the output is transformed into 2617و8 using a mapping process to convert Latin characters into their corresponding Arabic characters.
 Workflow
+
 1. Frame Extraction and Cropping
 The project includes two scripts that handle video and image processing:
 
